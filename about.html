@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="images/9.png" type="image/x-icon">
 
     <!-- ========== LINKS ========== -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -18,22 +18,86 @@
 <body>
 
     <!-- ========== CONTAINER ========== -->
+    <div class="container">
+        <!-- ========== BACKGORUND VIDEO ========== -->
+               <video class="back-vid" autoplay loop muted playsinline src="videos/galaxy.mp4"></video>
+        <!-- ========== HEADER SECTION ========== -->
+        <header>
+            <nav data-aos="fade-down" data-aos-duration="2000">
+                <div class="nav__logo">
+                    <img src="images/aungnaing.png" alt="logo image" />
+                    <h2>My Portfolio</h2>
+                </div>
 
-    <!-- ========== BACKGORUND VIDEO ========== -->
-
-    <!-- ========== HEADER SECTION ========== -->
-
-    <!-- ========== SIDEBAR FOR SMALL SCREEN ========== -->
-
-    <!-- ========== ABOUT SECTION ========== -->
-
-    <!-- ========== SKILLS SECTION ========== -->
-
-    <!-- ========== CONTACT SECTION ========== -->
-
-    <!-- ========== FOOTER SECTION ========== -->
+                <div class="nav__menu">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="/project.html">Projects</a></li>
+                    </ul>
+                </div>
 
 
+                <div class="box-icons">
+                    <p>
+                        <a href="https://www.youtube.com/@brianwebdeveloper" target="_blank">
+                            <i class="bx bxl-youtube"></i>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/AungNaing-Brian" target="_blank">
+                            <i class="bx bxl-github"></i>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/aungnaingbrian" target="_blank">
+                            <i class="bx bxl-linkedin-square"></i>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="menu-icon">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+        <!-- SIDEBAR FOR SMALL SCREEN -->
+
+        <div class="sidebar">
+            <div class="close-icon">
+                <i class="bx bx-x"></i>
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+
+            <div class="social-sidebar">
+                <a><i class="bx bxl-youtube"></i></a>
+                <a><i class="bx bxl-github"></i></a>
+                <a><i class="bx bxl-linkedin-square"></i></a>
+            </div>
+        </div>
+
+        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+            <video autoplay loop muted plays-inline src="videos/blackhole.mp4"></video>
+        </div>
+
+        <!-- ========== SIDEBAR FOR SMALL SCREEN ========== -->
+
+        <!-- ========== ABOUT SECTION ========== -->
+
+        <!-- ========== SKILLS SECTION ========== -->
+
+        <!-- ========== CONTACT SECTION ========== -->
+
+        <!-- ========== FOOTER SECTION ========== -->
+
+    </div>
     <!-- ========== POPUP ALERT ========== -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- ========== SCRIPTS ========== -->
