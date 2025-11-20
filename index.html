@@ -122,10 +122,11 @@
                     Backend and UI/UX Design. Check out my projects and skills.
                 </p>
 
-                <a href="#contact"><button><i class="bx bx-send"></i> Contact Me</button></a><br><br>
-                <a href="images/Web developer Aung Naing's Resume.pdf" download><button><i class="bx bx-download"></i>
+                <button onclick="window.location.href='mailto:aungnaing.brian@gmail.com'"><i class="bx bx-send"></i> Contact
+                        Me</button><br><br>
+                <a href="images/Web developer Aung Naing's Resume.pdf" download class="btn"><i class="bx bx-download"></i>
                         Download
-                        CV</button></a>
+                        CV</a>
             </div>
 
             <spline-viewer class="robot-3d"
@@ -164,7 +165,8 @@
 
                     <video src="videos/glob.mp4" autoplay loop muted plays-inline></video>
 
-                    <a href="#contact"><button><i class="bx bx-send"></i> Contact Me</button></a>
+                    <button onclick="window.location.href='mailto:aungnaing.brian@gmail.com'"><i class="bx bx-send"></i> Contact
+                            Me</button>
                 </div>
 
                 <div class="card">
@@ -193,8 +195,7 @@
                         Built using HTML, CSS & JS featuring scroll animations, light/dark
                         mode, and mobile-first responsive design.
                     </p>
-                    <button><a href="https://japanese-restaurant-webdesign.netlify.app/" target="_blank"><i
-                                class="bx bx-link-external"></i> Website</a></button>
+                    <button onclick="window.open('https://japanese-restaurant-webdesign.netlify.app/', '_blank')"><i class="bx bx-link-external"></i> Website</button>
                 </div>
             </div>
 
@@ -208,8 +209,7 @@
                         Responsive hotel landing page with smooth animations and clean
                         layout using HTML, CSS, and JS.
                     </p>
-                    <button><a href="https://hotel-booking-webdesign.netlify.app/" target="_blank"><i
-                                class="bx bx-link-external"></i> Website</a></button>
+                    <button onclick="window.open('https://hotel-booking-webdesign.netlify.app/', '_blank')"><i class="bx bx-link-external"></i> Website</button>
                 </div>
             </div>
 
@@ -224,8 +224,7 @@
                         Interactive and fully responsive tour agency site using HTML, CSS,
                         and JS with animated sections.
                     </p>
-                    <button><a href="https://travelandtourwebdesign.netlify.app/" target="_blank"><i
-                                class="bx bx-link-external"></i> Website</a></button>
+                    <button onclick="window.open('https://travelandtourwebdesign.netlify.app/', '_blank')"><i class="bx bx-link-external"></i> Website</button>
                 </div>
             </div>
         </section>
@@ -290,6 +289,50 @@
             </div>
         </section>
         <!-- ========== CONTACT SECTION ========== -->
+
+        <section class="contact-section" id="contact">
+            <h1 class="section-title autoDisplay"><span class="gradient">Let's talk</span></h1>
+
+            <div class="social-box autoBlur">
+                <a href="https://wa.me/971525498308" target="_blank"><i class="bx bxs-phone"></i> +971-525-498-308</a>
+                <a href="mailto:aungnaing.brian@gmail.com" target="_blank"><i class="bx bxl-gmail"></i>
+                    aungnaing.brian@gmail.com</a>
+                <a href="https://www.linkedin.com/in/aungnaingbrian" target="_blank"><i
+                        class="bx bxl-linkedin-square"></i>
+                    www.linkedin.com/in/aungnaingbrian</a>
+                <div class="social-icons">
+                    <a href="https://github.com/AungNaing-Brian" target="_blank"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.facebook.com/brian.957548" target="_blank"><i
+                            class="bx bxl-facebook-circle"></i></a>
+                    <a href="https://www.youtube.com/@brianwebdeveloper" target="_blank"><i
+                            class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-box autoBlur">
+                <p>
+                    Whether you're looking to build a new website or improve your existing
+                    platform. i'm here to help.
+                </p>
+
+                <form id="contact-form">
+
+
+                    <p>Full Name</p>
+                    <input id="name" placeholder="Your Full name" type="text" required />
+
+                    <p>Email Address</p>
+                    <input id="email" placeholder="Your Email" type="email" required />
+
+                    <p>Your Message</p>
+                    <textarea id="message" class="input-message" type="text" placeholder="share your thoughts..."
+                        required></textarea>
+
+                    <button type="submit" onclick="sendMail()">Send Message <i class="bx bx-mail-send"></i></button>
+                </form>
+
+            </div>
+        </section>
 
         <!-- ========== FOOTER SECTION ========== -->
     </div>

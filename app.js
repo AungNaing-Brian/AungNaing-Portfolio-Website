@@ -17,3 +17,33 @@ closeIcon.addEventListener("click", function(){
 })
 
 /* ========== MAIL FUNCTION ========== */
+
+function sendMail(){
+    let parms = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        message : document.getElementById("message").value,
+    }
+
+    emailjs.send("service_mmpowlf", "template_9qn3pbp", parms)
+    .then(() => {
+        Swal.fire({
+            title: "Message Sent!",
+            text: "Thank you for contacting me 😊",
+            icon: "success",
+            showClass: {
+                popup: `
+                  animate__animated
+                  animate__fadeInDown
+                `
+            },
+            hideClass: {
+                popup: `
+                  animate__animated
+                  animate__fadeOutUp
+                `
+            }
+        });
+        document.getElementById("contact-form").reset();
+    });
+}

@@ -413,7 +413,25 @@ header nav {
   transition: 0.3s;
 }
 
+
 .hero-info button:hover {
+  box-shadow: 0 0 15px #72a1de81;
+}
+
+.btn {
+  color: white;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 1px solid #72a1de81;
+  background-color: #2200493d;
+  box-shadow: 0 0 5px #72a1de81;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.btn:hover {
   box-shadow: 0 0 15px #72a1de81;
 }
 
@@ -628,10 +646,6 @@ header nav {
   transition: 0.3s;
 }
 
-.project-info button a {
-  color: #ffffff;
-  text-decoration: none;
-}
 
 .project-info button:hover {
   opacity: 0.8;
@@ -757,6 +771,90 @@ header nav {
 
 /* ========== CONTACT SECTION ========== */
 
+.contact-section {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+  position: relative;
+}
+
+.contact-section h1 {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+
+.social-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.social-box a {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 20px;
+  text-wrap: nowrap;
+}
+
+.social-box i {
+  color: #7668ff;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.social-icons a i {
+  color: white;
+  margin-top: 40px;
+}
+
+.contact-box p {
+  max-width: 400px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.contact-box input {
+  padding: 7.5px 30px;
+  background-color: lightgray;
+  width: 80%;
+  height: 25px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  
+}
+
+.input-message {
+  padding: 7.5px 30px;
+  background-color: lightgray;
+  width: 80%;
+  height: 100px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  
+}
+
+.contact-box button {
+  margin-top: 30px;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 1px solid #72a1de81;
+  background-color: #2200493d;
+  box-shadow: 0 0 5px #72a1de81;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-box button:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 15px #72a1de81;
+}
 /* ========== BREAKPOINTS ========== */
 
 @media (max-aspect-ratio: 16/9) {
@@ -778,6 +876,7 @@ header nav {
     margin-top: -20%;
   }
 
+  /* HEROSECTION */
   .hero-info h1 {
     font-size: 40px;
     max-width: 400px;
@@ -794,6 +893,7 @@ header nav {
     right: -30%;
   }
 
+  /* INFOSECTION */
   .info-cards {
     grid-template-columns: auto;
   }
@@ -817,17 +917,21 @@ header nav {
     margin-top: 5%;
   }
 
+  /* PROJECTSECTION */
   .my-project {
     margin-bottom: 200px;
     scale: 0.8;
   }
 
+  /* CONTACTSECTION */
   .contact-section .section-title {
     left: 30%;
   }
 }
 
 @media screen and (max-width: 700px) {
+
+  /* HEADERSECTION */
   .nav {
     position: fixed;
     height: 50px;
@@ -854,6 +958,7 @@ header nav {
     animation: none;
   }
 
+  /* HEROSECTION */
   .hero {
     flex-direction: column;
     top: 0;
@@ -872,6 +977,7 @@ header nav {
     right: -40%;
   }
 
+  /* INFOSECTION */
   .info-cards {
     grid-template-columns: auto;
   }
@@ -889,6 +995,7 @@ header nav {
     height: 100%;
   }
 
+  /* PROJECTSECTION */
   .my-project {
     margin-bottom: 600px;
   }
@@ -936,6 +1043,7 @@ header nav {
     gap: 10px;
   }
 
+  /* SKILLSSECTION */
   .skills-box {
     height: 150vh;
   }
@@ -965,6 +1073,18 @@ header nav {
   .slider .list .item img {
     width: 70%;
   }
+
+  /* CONTACTSECTION */
+   .contact-section {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .contact-section h1{
+    top: -0%;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -981,6 +1101,7 @@ header nav {
     margin-top: -27%;
   }
 
+  /* HEADERSECTION */
   .nav__logo {
     scale: 0.9;
     margin-left: -30px;
@@ -990,6 +1111,7 @@ header nav {
     font-size: 20px;
   }
 
+  /* HEROSECTION */
   .hero {
     scale: 0.9;
   }
@@ -1006,6 +1128,7 @@ header nav {
     font-size: 25px;
   }
 
+  /* INFOSECTION */
   .info-cards {
     display: flex;
     flex-direction: column;
@@ -1020,6 +1143,7 @@ header nav {
     font-size: 5px;
   }
 
+  /* PROJECTSECTION */
   .my-project {
     margin-bottom: 600px;
   }
@@ -1067,6 +1191,7 @@ header nav {
     gap: 10px;
   }
 
+  /* SKILLSECTION */
   .skills-box {
     height: 150vh;
     margin-right: 30px;
@@ -1098,4 +1223,17 @@ header nav {
   .slider {
     bottom: 0%;
   }
+
+
+  /* CONTACTSECTION */
+  .contact-section {
+    scale: 0.9;
+    height: 120vh;
+  }
+
+  .contact-section .section-title {
+    top: -30px;
+    left: 25%;
+  }
+
 }
