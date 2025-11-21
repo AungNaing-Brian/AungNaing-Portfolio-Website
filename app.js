@@ -47,3 +47,13 @@ function sendMail(){
         document.getElementById("contact-form").reset();
     });
 }
+
+/* ========== FOR PROJECT PAGE/PANDING MESSAGE ========== */
+function pendingProject() {
+  Swal.fire({
+    icon: "info",
+    title: "Coming Soon!",
+    text: "This project is still in progress. Stay tuned!",
+    confirmButtonColor: "#6a00ff"
+  });
+}
