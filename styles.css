@@ -866,6 +866,77 @@ header nav {
   z-index: 999;
   padding: 1rem 3rem;
 }
+
+/* ========== FOR ABOUT PAGE ========== */
+
+.about {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-info {
+  position: absolute;
+  left: 5%;
+}
+
+.about-info .about-info-title {
+  color: #72a1de;
+  padding: 8px 5px;
+  border-radius: 50px;
+  border: 1px solid #72a1de94;
+  width: 240px;
+  background-color: #2200493d;
+  box-shadow: 0 0 5px #72a1de84;
+}
+
+.about-info h1 {
+  font-size: 60px;
+  max-width: 600px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.about-info p {
+  max-width: 550px;
+  line-height: 25px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.about-img {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  height: 50%;
+  border-radius: 10%;
+  transform: translateX(0px);
+  animation: float 8s ease-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.about-img:hover {
+  box-shadow: 0 0 15px rgb(211, 211, 211);
+}
+
+/* ========== FOR PROJECT PAGE ========== */
+
 /* ========== BREAKPOINTS ========== */
 
 @media (max-aspect-ratio: 16/9) {
@@ -937,6 +1008,45 @@ header nav {
   /* CONTACTSECTION */
   .contact-section .section-title {
     left: 30%;
+  }
+
+  /* FOR ABOUT PAGE */
+  .about-info h1 {
+    font-size: 40px;
+    max-width: 400px;
+    line-height: 40px;
+  }
+
+  .about-info P {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  /*========== FOR ABOUT PAGE ==========*/
+
+  .about {
+    margin-top: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-info {
+    position: static;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .about-info p {
+    text-align: justify;
+  }
+
+  .about-img {
+    position: static;
+    margin-top: 50px;
+    width: auto;
   }
 }
 
@@ -1104,6 +1214,32 @@ header nav {
   .social-box {
     margin-left: -90px;
   }
+
+  /*========== FOR ABOUT PAGE ==========*/
+
+  .about {
+    margin-top: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-info {
+    position: static;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .about-info p {
+    text-align: justify;
+  }
+
+  .about-img {
+    position: static;
+    margin-top: 50px;
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1266,5 +1402,18 @@ header nav {
 
   .footer .box-icons {
     gap: 10px;
+  }
+
+  /* FOR ABOUT PAGE */
+  .about {
+    scale: 0.9;
+  }
+
+  .about-info {
+    bottom: 15%;
+  }
+
+  .about-info h1 {
+    font-size: 35px;
   }
 }
