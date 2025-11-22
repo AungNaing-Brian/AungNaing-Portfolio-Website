@@ -15,15 +15,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- ========== MAILSCRIPT ========== -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "iKUtc1a-t-bGHfKex",
-            });
-        })();
-    </script>
 </head>
 
 <body>
@@ -321,7 +312,8 @@
                     platform. i'm here to help.
                 </p>
 
-                <form id="contact-form">
+                <form id="contact-form" onsubmit="sendMail(event)">
+
 
 
                     <p>Full Name</p>
@@ -334,7 +326,8 @@
                     <textarea id="message" class="input-message" type="text" placeholder="share your thoughts..."
                         required></textarea>
 
-                    <button type="submit" onclick="sendMail()">Send Message <i class="bx bx-mail-send"></i></button>
+                    <button type="submit">Send Message <i class="bx bx-mail-send"></i></button>
+
                 </form>
 
             </div>
@@ -356,7 +349,19 @@
     </div>
     <!-- ========== POPUP ALERT ========== -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- ========== MAILSCRIPT ========== -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "iKUtc1a-t-bGHfKex",
+            });
+        })();
+    </script>
     <!-- ========== SCRIPTS ========== -->
+
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

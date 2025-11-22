@@ -1,12 +1,11 @@
 /* ========== GOOGLE FONTS ========== */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
 
 /* ========== BASE ========== */
 /* FONT */
 :root {
   --body-font: "Poppins", sans-serif;
-  --title-fone: "Lora", serif;
-  --subtitle-font: "Dancing Script", cursive;
+  --title-font: "Lora", serif;
 }
 
 * {
@@ -22,6 +21,10 @@ html {
 body {
   font-family: var(--body-font);
   color: lightgray;
+}
+
+h1 {
+  font-family: var(--title-font);
 }
 
 .back-vid {
@@ -731,12 +734,14 @@ header nav {
   mix-blend-mode: difference;
   opacity: 0.7;
 }
+
 .slider .list {
   display: flex;
   width: 100%;
   min-width: calc(var(--width) * var(--quantity));
   position: relative;
 }
+
 .slider .list .item {
   width: var(--width);
   height: var(--height);
@@ -748,21 +753,26 @@ header nav {
     (10s / var(--quantity)) * (var(--position) - 1) - 10s
   ) !important;
 }
+
 .slider .list .item img {
   width: 100%;
 }
+
 @keyframes autoRun {
   from {
     left: 100%;
   }
+
   to {
     left: calc(var(--width) * -1);
   }
 }
+
 .slider:hover .item {
   animation-play-state: paused !important;
   filter: grayscale(1);
 }
+
 .slider .item:hover {
   filter: grayscale(0);
 }
@@ -939,9 +949,7 @@ header nav {
   .contact-section .section-title {
     left: 30%;
   }
-
 }
-
 
 @media screen and (max-width: 700px) {
   /* HEADERSECTION */
@@ -1045,11 +1053,13 @@ header nav {
     width: 50%;
     height: 50%;
   }
+
   .project-image-home img {
     margin-bottom: 5%;
     width: 100%;
     height: 100%;
   }
+
   .project-card {
     flex-direction: column;
     margin-left: 25%;
@@ -1083,6 +1093,7 @@ header nav {
   .slider {
     top: 80%;
   }
+
   .slider .list .item img {
     width: 70%;
   }
@@ -1107,7 +1118,6 @@ header nav {
   .social-box {
     margin-left: -90px;
   }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -1204,10 +1214,12 @@ header nav {
     width: 50%;
     height: 50%;
   }
+
   .project-image-home img {
     width: 100%;
     height: 100%;
   }
+
   .project-card {
     flex-direction: column;
     margin-left: 25%;
@@ -1271,7 +1283,6 @@ header nav {
   .footer .box-icons {
     gap: 10px;
   }
-
 }
 
 /* ============================
@@ -1331,9 +1342,11 @@ header nav {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-60px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -1343,11 +1356,9 @@ header nav {
   box-shadow: 0 0 15px rgb(211, 211, 211);
 }
 
-
 /* ========== BREAKPOINTS FOR ABOUT PAGE ========== */
 
 @media screen and (max-width: 1200px) {
-
   .about-info h1 {
     font-size: 40px;
     max-width: 400px;
@@ -1357,11 +1368,9 @@ header nav {
   .about-info P {
     max-width: 300px;
   }
-
 }
 
 @media screen and (max-width: 950px) {
-
   .about {
     margin-top: 10%;
     flex-direction: column;
@@ -1385,11 +1394,9 @@ header nav {
     margin-top: 50px;
     width: auto;
   }
-
 }
 
 @media screen and (max-width: 700px) {
-  
   .about {
     margin-top: 10%;
     flex-direction: column;
@@ -1413,11 +1420,9 @@ header nav {
     margin-top: 50px;
     width: auto;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-
   .about {
     scale: 0.9;
   }
@@ -1441,7 +1446,7 @@ header nav {
   text-align: center;
 }
 
-.section-title{
+.section-title {
   margin-bottom: 10%;
 }
 
@@ -1449,7 +1454,7 @@ header nav {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
@@ -1457,19 +1462,18 @@ header nav {
 
 .project-image-main,
 .project-info-main {
-  flex: 1 1 300px; 
+  flex: 1 1 300px;
 }
-
 
 .project-image-main img {
   width: 100%;
-  height: auto; 
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px lightgray;
   transition: 0.5s;
 }
 
-.project-image-main img:hover{
+.project-image-main img:hover {
   box-shadow: 0 0 25px rgb(255, 255, 255);
 }
 
@@ -1489,7 +1493,6 @@ header nav {
   opacity: 0.8;
   box-shadow: 0 0 15px #72a1de81;
 }
-
 
 /* ========== BREAKPOINTS FOR PROJECT PAGE ========== */
 @media (max-width: 992px) {

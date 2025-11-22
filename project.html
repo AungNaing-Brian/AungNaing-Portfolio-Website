@@ -230,9 +230,8 @@
                         Personal portfolio designed in Figma and built with
                         HTML, CSS, and JS to showcase projects.
                     </p>
-                    <button onclick="pendingProject()">
-                        <i class="bx bx-time"></i> Pending
-                    </button>
+                    <button onclick="window.open('https://aungnaing-portfolio-website.netlify.app/', '_blank')"><i
+                            class="bx bx-link-external"></i> Website</button>
 
                 </div>
             </div>
@@ -328,7 +327,8 @@
                     platform. i'm here to help.
                 </p>
 
-                <form id="contact-form">
+                <form id="contact-form" onsubmit="sendMail(event)">
+
 
 
                     <p>Full Name</p>
@@ -341,7 +341,8 @@
                     <textarea id="message" class="input-message" type="text" placeholder="share your thoughts..."
                         required></textarea>
 
-                    <button type="submit" onclick="sendMail()">Send Message <i class="bx bx-mail-send"></i></button>
+                    <button type="submit">Send Message <i class="bx bx-mail-send"></i></button>
+
                 </form>
 
             </div>
@@ -362,6 +363,17 @@
     </div>
     <!-- ========== POPUP ALERT ========== -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- ========== MAILSCRIPT ========== -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "iKUtc1a-t-bGHfKex",
+            });
+        })();
+    </script>
+
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
