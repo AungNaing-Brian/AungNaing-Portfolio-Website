@@ -8,7 +8,7 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 
 ## 💡 About This Project
 
-This is my personal **portfolio website** built to highlight my work and present my web development journey. It shows my skills, completed projects, contact information, and other relevant details in a clean and responsive layout. :contentReference[oaicite:0]{index=0}
+This is my personal **portfolio website** built to highlight my work and present my web development journey. It shows my skills, completed projects, contact information, and other relevant details in a clean and responsive layout. 
 
 ---
 
